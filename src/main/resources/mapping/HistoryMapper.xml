@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brandon.doublecolorball.mapper.HistoryMapper">
+    <select id="getAllHis" resultType="com.brandon.doublecolorball.domain.History">
+        select * from history
+    </select>
+
+    <select id="getHisByPhase" resultType="com.brandon.doublecolorball.domain.History" parameterType="int">
+        select * from history a where a.phase = #{value}
+    </select>
+
+    <insert id="insertHis" parameterType="com.brandon.doublecolorball.domain.History">
+        insert into history(phase, red1, red2, red3, red4, red5, red6, blue)
+            values (#{phase}, #{red1}, #{red2}, #{red3}, #{red4}, #{red5}, #{red6}, #{blue})
+    </insert>
+
+    <delete id="deleteAllHis" >
+        delete from history
+    </delete>
+
+</mapper>
