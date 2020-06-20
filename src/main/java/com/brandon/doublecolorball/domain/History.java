@@ -1,5 +1,8 @@
 package com.brandon.doublecolorball.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class History {
     private Integer phase;
     private Integer red1;
