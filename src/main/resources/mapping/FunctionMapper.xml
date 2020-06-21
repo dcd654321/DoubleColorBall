@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brandon.doublecolorball.mapper.FunctionMapper">
+    <select id="getAllFuncs" resultType="com.brandon.doublecolorball.domain.Function">
+         select * from function a where a.flag = '1'
+    </select>
+
+    <update id="updateProbabilityByCode" parameterType="com.brandon.doublecolorball.domain.Function">
+        update function a set a.probability = #{probability} where a.code = #{code}
+    </update>
+
+</mapper>

@@ -38,8 +38,9 @@ public class HistoryController {
         hisService.deleteAllHis();
     }
 
-    @RequestMapping(value = "/iniHis",method = RequestMethod.POST)
-    public void iniHis() throws IOException {
-        hisService.iniHis();
+    @RequestMapping(value = "/initHis",method = RequestMethod.POST)
+    public void initHis() throws IOException {
+        hisService.initHis();
     }
+
 }

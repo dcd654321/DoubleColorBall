@@ -1,17 +1,20 @@
 package com.brandon.doublecolorball.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Function {
-    private int id;
+    private String id;
     private String code;
     private String  name;
     private double probability;
     private String flag;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

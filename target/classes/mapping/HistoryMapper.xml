@@ -5,7 +5,7 @@
         select * from history
     </select>
 
-    <select id="getHisByPhase" resultType="com.brandon.doublecolorball.domain.History" parameterType="int">
+    <select id="getHisByPhase" resultType="com.brandon.doublecolorball.domain.History" parameterType="Integer">
         select * from history a where a.phase = #{value}
     </select>
 
@@ -18,4 +18,11 @@
         delete from history
     </delete>
 
+    <select id="getMaxPhase" resultType="Integer">
+        select max(phase) from history
+    </select>
+
+    <select id="getPhaseListByNum" parameterType="Integer" resultType="Integer">
+         select phase from history order by phase desc limit 0, #{value}
+    </select>
 </mapper>

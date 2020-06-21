@@ -3,7 +3,7 @@ package com.brandon.doublecolorball.domain;
 import org.springframework.stereotype.Component;
 
 @Component
-public class History {
+public class History implements DoubleColorBall{
     private Integer phase;
     private Integer red1;
     private Integer red2;

@@ -3,19 +3,19 @@ package com.brandon.doublecolorball.domain;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RecommendationGroup {
+public class RecommendationGroup implements DoubleColorBall {
     private String id;
-    private String functionId;
-    private int phase;
-    private int groupNum;
-    private int red1;
-    private int red2;
-    private int red3;
-    private int red4;
-    private int red5;
-    private int red6;
-    private int blue;
-    private int grade;
+    private String functionCode;
+    private Integer phase;
+    private Integer groupNum;
+    private Integer red1;
+    private Integer red2;
+    private Integer red3;
+    private Integer red4;
+    private Integer red5;
+    private Integer red6;
+    private Integer blue;
+    private Integer grade;
 
     public String getId() {
         return id;
@@ -25,91 +25,91 @@ public class RecommendationGroup {
         this.id = id;
     }
 
-    public String getFunctionId() {
-        return functionId;
+    public String getFunctionCode() {
+        return functionCode;
     }
 
-    public void setFunctionId(String functionId) {
-        this.functionId = functionId;
+    public void setFunctionCode(String functionCode) {
+        this.functionCode = functionCode;
     }
 
-    public int getPhase() {
+    public Integer getPhase() {
         return phase;
     }
 
-    public void setPhase(int phase) {
+    public void setPhase(Integer phase) {
         this.phase = phase;
     }
 
-    public int getGroupNum() {
+    public Integer getGroupNum() {
         return groupNum;
     }
 
-    public void setGroupNum(int groupNum) {
+    public void setGroupNum(Integer groupNum) {
         this.groupNum = groupNum;
     }
 
-    public int getRed1() {
+    public Integer getRed1() {
         return red1;
     }
 
-    public void setRed1(int red1) {
+    public void setRed1(Integer red1) {
         this.red1 = red1;
     }
 
-    public int getRed2() {
+    public Integer getRed2() {
         return red2;
     }
 
-    public void setRed2(int red2) {
+    public void setRed2(Integer red2) {
         this.red2 = red2;
     }
 
-    public int getRed3() {
+    public Integer getRed3() {
         return red3;
     }
 
-    public void setRed3(int red3) {
+    public void setRed3(Integer red3) {
         this.red3 = red3;
     }
 
-    public int getRed4() {
+    public Integer getRed4() {
         return red4;
     }
 
-    public void setRed4(int red4) {
+    public void setRed4(Integer red4) {
         this.red4 = red4;
     }
 
-    public int getRed5() {
+    public Integer getRed5() {
         return red5;
     }
 
-    public void setRed5(int red5) {
+    public void setRed5(Integer red5) {
         this.red5 = red5;
     }
 
-    public int getRed6() {
+    public Integer getRed6() {
         return red6;
     }
 
-    public void setRed6(int red6) {
+    public void setRed6(Integer red6) {
         this.red6 = red6;
     }
 
-    public int getBlue() {
+    public Integer getBlue() {
         return blue;
     }
 
-    public void setBlue(int blue) {
+    public void setBlue(Integer blue) {
         this.blue = blue;
     }
 
-    public int getGrade() {
+    public Integer getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public void setGrade(Integer grade) {
         this.grade = grade;
     }
 }
